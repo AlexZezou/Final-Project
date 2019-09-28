@@ -59,7 +59,7 @@ function init(resultFromServer) {
 
   let resultDescreiption = resultFromServer.weather[0].description
   console.log(resultDescreiption);
-  weatherDescriptionHeader.innerText = resultDescreiption[1].toUpperCase();
+  weatherDescriptionHeader.innerText = resultDescreiption.toUpperCase();
 
 }
 
