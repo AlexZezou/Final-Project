@@ -58,7 +58,8 @@ function init(resultFromServer) {
   WeatherIcon.src = resultFromServer.weather[0].main + '.jpeg';
 
   let resultDescreiption = resultFromServer.weather[0].description
-  weatherDescriptionHeader.innerText = resultDescreiption.charAt(0).toUpperCase.resultDescription.slice(1);
+  console.log(resultDescreiption);
+  weatherDescriptionHeader.innerText = resultDescreiption.toUpperCase();
 
 }
 
